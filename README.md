@@ -1,2 +1,2 @@
 # Dazzling-Screens
-This a booking site web app of small screen theator buisness, where user can visit and book the theator according to his/her availability.
+This is a web app for a small-screen theater business, where users can visit and book the theater according to their availability.
