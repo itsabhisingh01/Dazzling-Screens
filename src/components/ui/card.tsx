@@ -53,7 +53,7 @@ export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(
   ({ className, ...props }, ref) => (
     <div
       ref={ref}
-      className={cn(" text-gray-400 p-4 flex flex-col gap-2", className)}
+      className={cn(" text-gray-400 cp-4 flex flex-col gap-2", className)}
       {...props}
     />
   )
