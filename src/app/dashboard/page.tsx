@@ -1,6 +1,6 @@
 "use client"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { User } from "lucide-react";
 import { JSX } from "react";
@@ -34,8 +34,8 @@ export default function Dashboard(): JSX.Element {
       {/* Sidebar */}
       <aside className="w-64 bg-white shadow-md p-5 flex flex-col justify-between">
         <div>
-          <h1 className="text-2xl font-bold mb-8 text-yellow-500">🎬 Dazzling</h1>
-          <ul className="space-y-4 text-gray-700">
+          <h1 className="text-2xl font-bold mt-4 mb-8 text-black">🎬 Dazzling</h1>
+          <ul className="space-y-7 ml-7 text-gray-500">
             {[
               "Dashboard",
               "Bookings",
@@ -51,15 +51,16 @@ export default function Dashboard(): JSX.Element {
             ))}
           </ul>
         </div>
-        <button className="text-gray-500 mt-8 text-sm">Log Out</button>
+        {/* <Button>Log Out</Button> */}
+        <button className="text-gray-500 mt-0 text-sm">Log Out</button>
       </aside>
 
       {/* Main Content */}
       <main className="flex-1 p-8">
         <div className="flex justify-between items-center mb-8">
           <div>
-            <h2 className=" text-gray-500 text-2xl font-semibold">Welcome to Dazzling Screens!</h2>
             <p className="text-gray-500">Hi Arpan</p>
+            <h2 className=" text-gray-500 text-2xl font-semibold">Welcome to Dazzling Screens!</h2>
           </div>
           <input
             type="text"
@@ -97,7 +98,7 @@ export default function Dashboard(): JSX.Element {
             </CardContent>
           </Card>
 
-          <Card className="bg-linear-to-r from-purple-500 to-blue-500 text-white">
+          <Card className="bg-yellow-400 text-transparent">
             <CardHeader>
               <CardTitle>Activity</CardTitle>
             </CardHeader>
@@ -112,6 +113,7 @@ export default function Dashboard(): JSX.Element {
           <Card className="col-span-2">
             <CardHeader>
               <CardTitle>Total Spent</CardTitle>
+              <p className=" text-gray-700 text-3xl mt-0 font-semibold">₹682.5</p>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={200}>
@@ -119,10 +121,9 @@ export default function Dashboard(): JSX.Element {
                   <XAxis dataKey="month" />
                   <YAxis />
                   <Tooltip />
-                  <Bar dataKey="value" fill="#6D28D9" radius={[6, 6, 0, 0]} />
+                  <Bar dataKey="value" fill="#FACC15" radius={[6, 6, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
-              <p className="text-xl mt-4 font-semibold">₹682.5</p>
             </CardContent>
           </Card>
 
