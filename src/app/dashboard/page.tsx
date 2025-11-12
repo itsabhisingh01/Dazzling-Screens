@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { User } from "lucide-react";
 import { JSX } from "react";
+import Sidebar from "@/components/ui/sidebar";
 
 // Type definition for chart data
 type ChartData = {
@@ -33,26 +34,7 @@ export default function Dashboard(): JSX.Element {
     <div className="min-h-screen bg-gray-50 flex">
       {/* Sidebar */}
       <aside className="w-64 bg-white shadow-md p-5 flex flex-col justify-between">
-        <div>
-          <h1 className="text-2xl font-bold mt-4 mb-8 text-black">🎬 Dazzling</h1>
-          <ul className="space-y-7 ml-7 text-gray-500">
-            {[
-              "Dashboard",
-              "Bookings",
-              "Theaters",
-              "Coupons",
-              "Slots",
-              "Schedules",
-              "Payments",
-              "Security",
-              "Settings",
-            ].map((item) => (
-              <li key={item} className="cursor-pointer hover:text-yellow-500">{item}</li>
-            ))}
-          </ul>
-        </div>
-        {/* <Button>Log Out</Button> */}
-        <button className="text-gray-500 mt-0 text-sm">Log Out</button>
+        <Sidebar/>
       </aside>
 
       {/* Main Content */}
