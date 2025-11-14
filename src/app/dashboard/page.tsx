@@ -124,7 +124,7 @@ export default function Dashboard(): JSX.Element {
               <div className="bg-yellow-100 rounded-full p-3 mb-3">
                 <User size={40} className="text-yellow-500" />
               </div>
-              <h3 className="text-lg font-semibold mb-0">Arpan</h3>
+              <h3 className="text-lg font-semibold">Arpan</h3>
               <div className=" flex items-center gap-2">
                 <MapPinPen size={20} className="text-gray-500 bg-gray-100 rounded-full"/>
                 <span className="text-gray-500 text-sm">Pitampura, Delhi</span>
