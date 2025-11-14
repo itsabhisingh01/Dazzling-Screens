@@ -1,4 +1,7 @@
 import { Button } from "./button";
+import Image from "next/image";
+import Link from "next/link";
+
 import {
   LayoutDashboard,
   CalendarCheck,
@@ -27,10 +30,28 @@ export default function Sidebar() {
   return (
     <>
       <div>
-        <h1 className="text-2xl font-bold mt-4 mb-8 text-black">🎬 Dazzling</h1>
+        <Link
+          href="/dashboard"
+          className="flex items-center gap-3 hover:opacity-90 transition"
+        >
+          <Image
+            src="/dazzling_logo.png"
+            alt="Dazzling Screens"
+            width={40}
+            height={40}
+            className=" bg-amber-300 rounded-md mb-2 ml-4"
+          />
+          <span>
+            
+            <h1 className="text-2xl font-bold mt-4 mb-8 text-black">
+              Dazzling
+            </h1>
+          </span>
+        </Link>
+
         <hr className=" mb-4 text-gray-100" />
 
-        <ul className="space-y-7 ml-7 text-gray-500">
+        <ul className="space-y-7 ml-5 text-gray-500">
           {menuItems.map(({ name, icon: Icon }) => (
             <li
               key={name}
