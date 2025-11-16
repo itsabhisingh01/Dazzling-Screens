@@ -39,9 +39,9 @@ export default function Dashboard(): JSX.Element {
   return (
     <div className="min-h-screen bg-gray-50 flex">
       {/* Sidebar */}
-      <aside className="w-64 bg-white shadow-md p-5 flex flex-col justify-between">
-        <Sidebar />
-      </aside>
+      <aside className="w-64 bg-white shadow-md p-5 flex flex-col justify-between sticky top-0 h-screen">
+          <Sidebar />
+        </aside>
 
       {/* Main Content */}
       <main className="flex-1 p-8">
