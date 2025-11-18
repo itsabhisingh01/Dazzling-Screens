@@ -146,7 +146,7 @@ export default function BookingsPage() {
                   </tr>
                 </thead>
 
-                <tbody className="divide-y w-full divide-gray-300">
+                <tbody className="divide-y w-full divide-gray-400">
                   {bookings.map((order, index) => (
                     <tr
                       key={index}
