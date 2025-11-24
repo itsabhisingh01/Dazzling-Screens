@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
+/* --------------------------------------------- */
+/* Root Variables                                */
+/* --------------------------------------------- */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+/* Tailwind Theme Inline */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,8 +22,52 @@
   }
 }
 
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3),
+                0 0 40px rgba(255, 215, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5),
+                0 0 60px rgba(255, 215, 0, 0.2);
+  }
+}
+
+.glow-btn {
+  animation: glow 2s ease-in-out infinite;
+}
+.glow-yellow-400 {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3),
+              0 0 40px rgba(255, 215, 0, 0.1);
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* Base Styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Font utilities */
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-inter {
+  font-family: var(--font-inter);
 }
