@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${cinzel.variable} ${inter.variable}`}>
-      <body className="pt-[92px] bg-dark-bg text-white font-[var(--font-inter)]">
+      <body className="pt-[92px] bg-dark-bg text-white font-(--font-inter)">
         {children}
       </body>
     </html>

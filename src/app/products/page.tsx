@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { ArrowLeft, ArrowRight, Heart, Pencil, Plus } from "lucide-react";
 import Sidebar from "@/components/ui/sidebar";
-import Header from "@/components/ui/dashboardHeader";
+import Header from "@/components/dashboardHeader";
 import { useState } from "react";
 
 // Product Type
@@ -158,6 +158,9 @@ export default function ProductsPage() {
                   <button
                     type="button"
                     className="text-red-500 hover:text-red-600"
+                    aria-label={p.liked ? "Unlike product" : "Like product"}
+                    title={p.liked ? "Unlike product" : "Like product"}
+                    aria-pressed={p.liked}
                   >
                     <Heart size={22} fill={p.liked ? "red" : "none"} />
                   </button>

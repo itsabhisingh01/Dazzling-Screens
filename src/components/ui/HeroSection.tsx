@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[800px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[750px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6137374a0f-47b76cd795190e0b8d42.png"

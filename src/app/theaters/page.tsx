@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { MapPin, Pencil, Trash2, Plus } from "lucide-react";
 import Sidebar from "@/components/ui/sidebar";
-import Header from "@/components/ui/dashboardHeader";
+import Header from "@/components/dashboardHeader";
 import { useState } from "react";
 
 // Theater Type

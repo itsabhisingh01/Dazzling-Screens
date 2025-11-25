@@ -2,9 +2,9 @@
 
 import { Calendar, Filter, ChevronDown } from "lucide-react";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/card";
 import Sidebar from "@/components/ui/sidebar";
-import Header from "@/components/ui/dashboardHeader";
+import Header from "@/components/dashboardHeader";
 
 const bookings = [
   {
